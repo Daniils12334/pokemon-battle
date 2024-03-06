@@ -76,17 +76,17 @@ while True:
 
         print("Enemie has chosen") 
         comp_choice = random.randint(0, 42)
-        def sort_number1 (pokemons):
-            return int(pokemons["number"])
-        pokemons.sort(key = sort_number1)
         print(pokemons[comp_choice])
+        pokemon_1 = pokemons[comp_choice]
 
         player_choice = int(input("Ievadiet jūsu pokemona indeksu"))
-        def sort_number2 (pokemons):
-            return int(pokemons["number"])
-        pokemons.sort(key = sort_number2)
         print(pokemons[player_choice])
+        pokemon_2 = pokemons[player_choice]
+
         
+        
+
+
 
 
 
