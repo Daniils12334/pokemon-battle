@@ -37,12 +37,27 @@ while True:
 
     if choice == '1':
         # https://www.w3schools.com/python/python_dictionaries_access.asp
+        def sort_number (pokemons):
+            return int(pokemons["number"])
+        index=int(input("Ievadiet Pokemona Nummuru"))
+        pokemons.sort(key = sort_number)
+        print(pokemons[index])
+
+
         pass
     elif choice == '2':
         # https://www.w3schools.com/python/python_lists_sort.asp
+        def sort_total (pokemons):
+            return int(pokemons["total"])
+        pokemons.sort(key = sort_total, reverse = True)
+        print(pokemons[:11])
         pass
     elif choice == '3':
         # https://www.w3schools.com/python/python_lists_sort.asp
+        def sort_total (pokemons):
+            return int(pokemons["total"])
+        pokemons.sort(key = sort_total, reverse = False)
+        print(pokemons[:11])
         pass
     elif choice == '4':
         # Battle
@@ -52,7 +67,31 @@ while True:
         # Player choosing by entering Pokemon index
         # Damage is calculated by: (attack of Pokemon 2) - (defense of Pokemon 1) + (random from 5 to 20), and vice-versa
         # Player reaching 0 health (total) - lost
-        pass
+         
+        START=input("Press Enter to Start")
+        player = str(input("Enter YOure Name"))
+        computer_name = str("DUNGEON MASTER")
+        print("CHOOSE YOURE CAHMPION")
+
+
+        print("Enemie has chosen") 
+        comp_choice = random.randint(0, 42)
+        def sort_number1 (pokemons):
+            return int(pokemons["number"])
+        pokemons.sort(key = sort_number1)
+        print(pokemons[comp_choice])
+
+        player_choice = int(input("Ievadiet jūsu pokemona indeksu"))
+        def sort_number2 (pokemons):
+            return int(pokemons["number"])
+        pokemons.sort(key = sort_number2)
+        print(pokemons[player_choice])
+        
+
+
+
+
+
 
     elif choice == '5':
         print("Exiting")
